@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-todo-list-f6115": {
+      "hosting": {
+        "angular-firebase-todo-list": [
+          "angular-todo-list-f6115"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-todo-list-f6115"
+  }
+}

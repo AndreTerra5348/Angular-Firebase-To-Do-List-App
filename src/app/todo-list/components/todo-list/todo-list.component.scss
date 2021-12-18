@@ -1,0 +1,40 @@
+:host {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    padding: 25px 0px;
+}
+
+.card {
+    min-width: 600px;
+    background-color: azure;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.text-field mat-form-field {
+    width: 100%;
+}
+
+.text-field input {
+    width: 100%;
+}
+
+.line-container {
+    display: flex;
+    width: 100%;
+}
+
+.item-text {
+    align-self: center;
+    padding-right: 15px;
+}
+
+.buttons-container {
+    margin-left: auto;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}

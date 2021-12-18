@@ -1,27 +1,67 @@
-# AngularFirebaseTodoList
+# A Simple CRUD App
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue")](https://www.linkedin.com/in/andr%C3%A9-terra-2a7728145/)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+  
+## Description
+This is a full fledged Single Page Application (SPA) To-do List made with Angular and Firebase
 
-## Development server
+I made this project to learn the more about Angular and Firebase
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+### Features
+- Firebase integration
+    - Firebase Auth
+    - Firebase Firestore
+- Firebase Auth
+    - Sign-In
+    - Sign-Up
+    - Email Verification
+    - Password Reset
+- Firebase Firestore
+    - Add Item
+    - Remove Item
+    - Mark Item as complete
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+[App Demo Page]()
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<img src="assets\page1.png" alt="page1" width="80%"> 
+<img src="assets\page2.png" alt="page2" width="80%">
 
-## Running unit tests
+## Built with
+- HTML
+- SCSS
+- [Angular](https://angular.io/)
+- [Angular Material Design](https://material.angular.io/)
+- [AngularFire](https://github.com/angular/angularfire)
+- [Firebase](https://firebase.google.com/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## What did I learn?
+- More of Angular Framework
+    - Modularized project structure
+    - Route guards
+- More Angular Material Design
+- More HTML tags
+- More CSS properties
+- The basics of Firebase
+- The basics of Angularfire
+- The basics of SCSS
 
-## Running end-to-end tests
+## Acknowledgments and Resources
+- [dev.to](https://dev.to/jdgamble555/angular-12-with-firebase-9-49a0) Angularfire tutorial
+- [positronx.io](https://www.positronx.io/full-angular-7-firebase-authentication-system/) Angular-Firebase auth tutorial
+- [The Net Ninja](https://www.youtube.com/watch?v=qWy9ylc3f9U) Firebase firestore tutorial
+- [AngularFire](https://github.com/angular/angularfire)
+- [stackblitz](https://stackblitz.com/edit/angular-material-login-form) Material login form example
+- [AngularTemplates](https://github.com/AngularTemplates/firebase-authentication-with-angular) Angular-Firebase auth github project
+- [Firebase](https://firebase.google.com/docs/)
+- [Angular Material Design](https://material.angular.io/)
+- [edupala](https://edupala.com/angular-firebase-crud-operation-using-angularfire/) Angular-Firebase CRUD tutorial
+- [medium](https://medium.com/@lucasluizss/como-criar-um-loading-autom%C3%A1tico-utilizando-angular-1e16e7384e5d) Angular loading HttpInterceptor tutorial
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## License
+Distributed under the MIT License. See LICENSE.txt for more information.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Author
+[André Terra](https://www.linkedin.com/in/andr%C3%A9-terra-2a7728145/)

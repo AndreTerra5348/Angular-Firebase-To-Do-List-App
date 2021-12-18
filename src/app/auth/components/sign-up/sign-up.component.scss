@@ -1,0 +1,8 @@
+@import "src/app/styles/auth";
+@include auth;
+
+.load-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

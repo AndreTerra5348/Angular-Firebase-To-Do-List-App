@@ -1,0 +1,15 @@
+<mat-toolbar class="header mat-elevation-z4">
+    <div class="content">
+        <button mat-button routerLink="">Home</button>
+        <button *ngIf="isAuthorized" [ngClass]="{'active': isAtListPage}" mat-button routerLink="/todo-list">To-do List</button>
+    </div>
+    <div class="left-side-content">
+        <div class="unauthorized-content" *ngIf="!isAuthorized">
+            <button mat-button mat-raised-button routerLink="sign-up">Register</button>    
+            <button mat-button mat-raised-button routerLink="sign-in">Login</button>    
+        </div>
+        <div class="authorized-content" *ngIf="isAuthorized">
+            <button mat-button mat-raised-button (click)="logout()">Logout</button>    
+        </div>
+    </div>
+</mat-toolbar>

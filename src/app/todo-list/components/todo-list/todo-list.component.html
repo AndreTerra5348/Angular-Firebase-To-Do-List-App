@@ -1,0 +1,26 @@
+<mat-card class="card mat-elevation-z3">
+    <mat-card-content class="card-content">
+        <form class="text-field" action="" [formGroup]="todoFormGroup" (ngSubmit)="onSubmit()">
+            <mat-form-field>
+                <mat-label>What do you need to do?</mat-label>
+                <input type="text" matInput maxlength="100" formControlName="todo" autocomplete="off">
+            </mat-form-field>
+        </form>
+        <mat-list>
+            <mat-list-item class="list-option" *ngFor="let item of todoList">
+                <div class="line-container">
+                    <span class="item-text" [ngClass]="!item.done ? 'null' : 'strikethrough'">{{item.text}}</span>
+                    <span class="buttons-container" >
+                        <button class="delete-button" mat-button mat-button-icon (click)="delete(item)">
+                            <mat-icon class="delete-icon" color="warn">delete</mat-icon>
+                        </button>
+                        <button class="done-button" mat-button mat-button-icon (click)="done(item)">
+                            <mat-icon class="done-icon" color="primary">{{item.done ? "undo" : "done"}}</mat-icon>
+                        </button>
+                    </span>
+                </div>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
+<app-loader></app-loader>
