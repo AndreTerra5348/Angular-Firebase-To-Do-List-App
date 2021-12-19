@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { FirebaseError } from '@angular/fire/app/firebase';
 import { AuthService } from 'src/app/core/services/auth.service';
 import { TitleCasePipe } from '@angular/common';
-import { SignUpSignInComponent } from '../AuthBaseComponents';
+import { SignUpSignInBase } from '../AuthBase';
 import { MatButton } from '@angular/material/button';
 import { LoaderService } from 'src/app/core/services/loader.service';
 
@@ -12,7 +12,7 @@ import { LoaderService } from 'src/app/core/services/loader.service';
   templateUrl: './sign-up.component.html',
   styleUrls: ['./sign-up.component.scss']
 })
-export class SignUpComponent extends SignUpSignInComponent {
+export class SignUpComponent extends SignUpSignInBase {
   @ViewChild(MatButton) button!: MatButton;
 
   constructor(private authService: AuthService,

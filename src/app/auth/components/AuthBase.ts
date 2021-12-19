@@ -3,7 +3,7 @@ import { FirebaseError } from '@angular/fire/app/firebase';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { LoaderService } from 'src/app/core/services/loader.service';
 
-export class AuthBaseComponent {
+export class AuthBase {
   error: string = "";
 
   constructor(private titleCasePipe: TitleCasePipe,
@@ -27,7 +27,7 @@ export class AuthBaseComponent {
   }
 }
 
-export abstract class SignUpSignInComponent extends AuthBaseComponent {
+export abstract class SignUpSignInBase extends AuthBase {
   form: FormGroup = new FormGroup({
     email: new FormControl('', [Validators.email, Validators.required]),
     password: new FormControl('', Validators.required),

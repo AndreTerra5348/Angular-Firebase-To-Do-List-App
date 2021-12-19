@@ -5,7 +5,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/core/services/auth.service';
 import { LoaderService } from 'src/app/core/services/loader.service';
-import { AuthBaseComponent } from '../AuthBaseComponents';
+import { AuthBase } from '../AuthBase';
 
 @Component({
   selector: 'app-forgot-password',
@@ -13,7 +13,7 @@ import { AuthBaseComponent } from '../AuthBaseComponents';
   styleUrls: ['./forgot-password.component.scss']
 
 })
-export class ForgotPasswordComponent extends AuthBaseComponent {
+export class ForgotPasswordComponent extends AuthBase {
   form: FormGroup = new FormGroup({
     email: new FormControl('', [Validators.email, Validators.required])
   });
